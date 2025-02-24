@@ -1,0 +1,48 @@
+body {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+body.loaded {
+    opacity: 1;
+}
+
+.navbar-collapse {
+    transition: height 0.5s ease-in-out;
+}
+
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.progress-bar {
+    width: 0%;
+    font-size: 1.2rem;
+}
+.progress {
+    height: 40px; /* Ajusta el valor según lo que desees */
+}
+
+/* Animación de despliegue para Studies, Hobbies y Social Media */
+section#aboutme h6 {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+section#aboutme h6:hover {
+    color: #ffa600;
+}
+
+.aboutme-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 3s ease-in-out;
+}
+
+.aboutme-list.show {
+    max-height: 500px;
+}
+

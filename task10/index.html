@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marc Cañadas Portfolio</title>
+    <!-- Bootstrap --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="portfolio.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand text-primary" href="#">
+                    <i class="bi bi-person-circle"></i> My Portfolio
+                </a>                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link text-info text-warning" href="#aboutme">About me</a></li>
+                        <li class="nav-item"><a class="nav-link text-info" href="#proyectos">My Projects</a></li>
+                        <li class="nav-item"><a class="nav-link text-success" href="#habilidades">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link text-danger" href="#contacto">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>        
+    </header>
+    <main>
+        <section class="hero text-center bg-success text-white py-5">
+            <div class="container">
+                <h1>Hi! I'm Marc Cañadas</h1>
+                <h5 class="text-warning">Web Developer</h5>
+            </div>
+        </section>
+
+        <section id="aboutme" class="container my-5">
+            <h2 class="text-center text-info text-warning"><i class="bi bi-person-raised-hand"></i> About me </h2> 
+            
+            <div class="row align-items-center">  
+                
+                <div class="col-md-4 text-center text-md-start">
+                    <img src="images/MARC_CAÑADAS_PGO03337.jpg" class="img-fluid w-100" alt="me">
+                </div>
+                <br>
+                <div class="col-md-8">
+                    <p class="fs-6 fw-semibold  p-3 border-start border-warning border-4 rounded">
+                        Hello! I'm Marc. Until relatively recently I was dedicated to the world of sports, more specifically soccer. 
+                        I am currently studying to be a web developer.
+                    </p>                    
+                    <h6 text-danger fw-bold text-decoration-underline>Studies <i class="bi bi-book-fill"></i> <span class="text-warning fw-bold">(Click me!)</span></h6>
+                    <ul class="aboutme-list">
+                        <li>TAFAD</li>
+                        <li>Sports technician in soccer</li>
+                        <li>DAW</li>
+                    </ul>
+                    <h6>Hobbies <i class="bi bi-person-heart"></i> <span class="text-warning fw-bold">(Click me!)</span></h6>
+                    <ul class="aboutme-list">
+                        <li> <i class="bi bi-controller"></i>  Videogames</li> 
+                        <li><i class="bi bi-dribbble"></i>  Soccer</li>
+                        <li><i class="bi bi-badge-4k"></i>  Movies and series</li>
+                        <li> <i class="bi bi-sun"></i>  Padel and trekking</li>
+                    </ul>
+                    <h6>Social media <i class="bi bi-people-fill"> </i> <span class="text-warning fw-bold">(Click me!)</span></h6> 
+                    <ul class="aboutme-list">
+                        <li><i class="bi bi-instagram"></i> 
+                            <a href="https://www.instagram.com/marc_cs11" class="text-decoration-none" target="_blank">marc_cs11</a>
+                        </li>
+                        <li><i class="bi bi-linkedin"></i> 
+                            <a href="https://www.linkedin.com/in/marc-ca%C3%B1adas-suau-3911b7261/" class="text-decoration-none" target="_blank">Marc Cañadas Suau</a>
+                        </li>
+                        <li><i class="bi bi-github"></i> 
+                            <a href="https://github.com/mcanadas-dawi" class="text-decoration-none" target="_blank">mcanadas-dawi</a>
+                        </li>
+                        <li><i class="bi bi-discord"></i> 
+                            <span class="text-muted">MarcCs11#7477</span>
+                        </li>
+                    </ul>
+                    
+
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="proyectos" class="container my-5">
+            <h2 class="text-center text-info"><i class="bi bi-folder"></i> My Projects</h2>
+            <div class="row d-flex align-items-stretch">
+                <div class="col-md-4">
+                    <div class="card h-100 p-2 shadow-sm">
+                        <img src="images/Tetris_logo.png" class="card-img-top" alt="Proyecto 1">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">JS Tetris</h5>
+                            <p class="card-text flex-grow-1">
+                                A personal version of the classic Tetris in JS. It has 2 game modes: <br>
+                                1. Beginner: in which the speed does not increase <br>
+                                2. Speed ​​increases as you get score.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-2">
+                        <img src="images/laravel_logo.png" class="card-img-top" alt="Proyecto 2">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Expense manager</h5>
+                            <p class="card-text flex-grow-1">
+                                This project is a web application for managing personal expenses. Allows users to record, edit and delete expenses, as well as view a summary of total, paid and pending expenses. The application is built using the Laravel framework and follows an MVC architecture.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-2">
+                        <img src="images/laliga_logo.png" class="card-img-top" alt="Proyecto 3">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">LaLiga API</h5>
+                            <p class="card-text flex-grow-1">
+                                API in PHP to manage the main operations of "La Liga", allowing the administration of teams, players, matches and season statistics. The API meets operational needs, such as maintaining detailed information about teams and players, managing the match schedule, and providing access to performance and ranking statistics.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="habilidades" class="container my-5">
+            <h2 class="text-center text-success"> <i class="bi bi-crosshair"></i> Skills</h2>
+            <div class="progress my-3">
+                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated fs-6"  data-width="80">
+                    <span class="icons">
+                        <i class="bi bi-filetype-html fs-2 me-5"></i>
+                        <i class="bi bi-filetype-css fs-2 me-5"></i>
+                        <i class="bi bi-filetype-js fs-2 me-5"></i>
+                        80%
+                    </span>
+                </div>
+            </div>
+            <div class="progress my-3">
+                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated fs-6"  data-width="60">
+                    <span class="icons">
+                        <i class="bi bi-filetype-java fs-2 me-5"></i>
+                        <i class="bi bi-filetype-php fs-2 me-5"></i>
+                        60%
+                    </span>
+                </div>
+            </div>
+            <div class="progress my-3">
+                <div class="progress-bar bg-warning fs-6 progress-bar-striped progress-bar-animated text-small"  data-width="40">
+                    <span>
+                    <i class="bi bi-bootstrap fs-2 me-5 "> </i> 
+                    40%
+                </span>
+                </div>
+            </div>
+        </section>
+                
+        
+    </main>
+    <footer>
+        <section id="contacto" class="container my-5">
+            <h2 class="text-center text-danger"> <i class="bi bi-envelope-at"></i> Contact</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label"> <i class="bi bi-person-vcard"></i> Name</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label"> <i class="bi bi-envelope-at"></i> Email</label> 
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label"><i class="bi bi-body-text"></i> Message</label>
+                    <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-primary btn-lg"><i class="bi bi-send"></i> Send</button>
+            </form>
+        </section>
+        
+    </footer>
+    <!-- Bootstrap JS --> 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="portfolio.js"></script>
+</body>
+</html>
